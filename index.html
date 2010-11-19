@@ -10,15 +10,13 @@ body {
     padding                 : 0;
 }
 
-h1 {
+.title {
     filter                  : progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#888'); /* for IE */
     background              : -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#888)); /* for webkit browsers */
     background              : -moz-linear-gradient(top,  #ccc,  #888); /* for firefox 3.6+ */
     color                   : #eee;
     display                 : block;
     font-family             : verdana, helvetica, arial, sans-serif;
-    font-size               : 36px;
-    font-weight             : 600;
     margin                  : 0;
     padding                 : 6px 12px 12px;
     width                   : 100%;
@@ -29,12 +27,24 @@ h1 {
     box-shadow              : -5px 5px 4px #aaa;
 }
 
+.title span {
+    font-size               : 24px;
+    font-weight             : 400;
+}
+
+h1 {
+    display                 : inline-block;
+    font-size               : 36px;
+    font-weight             : 600;
+    margin                  : 0;
+}
+
 h2 {
     color                   : #19d;
     display                 : block;
     font-family             : verdana, helvetica, arial, sans-serif;
     font-size               : 28px;
-    font-weight             : 40;
+    font-weight             : lighter;
     border-bottom           : 1px solid #aaa;
     margin                  : 30px auto;
     padding                 : 4px;
@@ -88,16 +98,19 @@ a.yui-link:link:hover {
     </head>
     <body>
 
-        <h1 class="rotor-z">Pygloo's Repos</h1>
+        <div class="title">
+            <h1>Pygloo's Repos</h1>
+        </div>
 
-        <h2 class="rotor-z">bewype-yui3-gallery</h1>
+        <h2>Bewype YUI3 gallery</h2>
 
         <p>
         The <a class="yui-link" href="http://developer.yahoo.com/yui/3/">YUI3</a> Bewype Gallery is a fork of the <a class="yui-link" href="http://developer.yahoo.com/yui/3/">YUI3</a> framework to manage nice additional widgets, plugins and tools. Then it take advantage of the YUI build mechanism to maintain and deliver these works. Thanks to <a class="yui-link" href="http://developer.yahoo.com/yui/3/">YUI3</a> for its "built-in" dynamic modules, translations and theming loading ;)
-            <br />
-            <br />
-            <br />
-            <a class="git-link" href="#">More Info on the Repo GitHug Page >></a>
         </p>
+
+        <p>
+            <a class="git-link" href="http://pygloo.github.com/bewype-yui3-gallery">More Info on the Repo GitHug Page >></a>
+        </p>
+
     </body>
-</html>    
+</html>
